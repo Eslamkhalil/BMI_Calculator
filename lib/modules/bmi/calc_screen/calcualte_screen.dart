@@ -251,8 +251,8 @@ class CalculateScreen extends StatelessWidget {
                           height: cubit.height.round()
                       );
                       Navigator.push(context, MaterialPageRoute(builder: (context) => ResultBmiScreen(
-                        title:culc.getResult() ,
                         score: culc.calculateBMI(),
+                        title:culc.getResult() ,
                         comment: culc.getInterpretation(),
                       )));
 
